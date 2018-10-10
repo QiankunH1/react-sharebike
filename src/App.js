@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './style/common.less'
 
 import './App.less';
 

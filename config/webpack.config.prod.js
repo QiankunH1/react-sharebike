@@ -377,6 +377,7 @@ module.exports = {
             // See https://github.com/webpack/webpack/issues/6571
             sideEffects: true,
           },
+          
           {
             test: /\.less$/,
             loader: getStyleLoaders(
