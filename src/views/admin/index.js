@@ -9,19 +9,21 @@ export default class Admin extends Component {
   render() {
     return (
       <div>
-          <Row>
-            <Col span={4}>
-                <NavLeft></NavLeft>
-            </Col>
-            <Col span={20}>
-                <Header></Header>
-                <div className='content-wrap'>
-                    <div className='content'>
-                        {this.props.children}  
-                    </div>    
-                </div>  
-                <Footer></Footer>
-            </Col>
+          <Row className='wrap clearfix'>        
+                    <Col span={3} className='wrapleft fll'>
+                        <NavLeft></NavLeft>
+                    </Col>                           
+                    <Col span={21}  className='wrapright flr'>
+                        <Header>
+                        </Header>
+                        <div className='content-wrap'>
+                            <div className='content'>
+                                {this.props.children}  
+                            </div>    
+                        </div>  
+                        <Footer>                           
+                       </Footer>
+                    </Col>          
           </Row>
       </div>
     )

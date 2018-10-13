@@ -1,4 +1,4 @@
-import  * as fetch from 'axios'
+
 
 
 
@@ -20,13 +20,4 @@ export function formData(unix){
     }
 
 
-    const xhr =fetch.create({
-        baseURL:'',
-        timeout:15000,
-    })
-
-    export const axios ={
-        get(url,data,config){
-
-        }
-    }
+ 
