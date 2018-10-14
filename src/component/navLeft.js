@@ -26,8 +26,7 @@ export default class NavLeft extends Component {
                   <Menu.Item key="4">                      
                     <Link to='/admin/echarts/pie'>饼状图</Link>                               
                   </Menu.Item>
-                </SubMenu>
-                                     
+                </SubMenu>   
           </Menu>
       </div>
     )

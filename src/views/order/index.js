@@ -171,12 +171,8 @@ params={
   if(this.state.selectedItem){
     console.log(this.state.selectedItem)
     const id = this.state.selectedItem[0].id
-    // axios.get(`/order/detail/${id}`).then(res=>{
-    //   console.log(res)
-    // })
-    axios.get('/order/detail,id').then(res=>{
-      console.log(res)
-    })
+    window.open(`/common/order/detail/${id}`, '_blank')
+    // window.open(`/#/common/order/detail/${id}`, '_blank')
   }else{
     Modal.info({
       title: '提示',
